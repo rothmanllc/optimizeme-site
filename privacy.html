@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · OptimizeMe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <svg class="mark" width="26" height="26" viewBox="0 0 32 32" aria-hidden="true">
+    <rect width="32" height="32" rx="8" fill="#18181b"/>
+    <path d="M6 20 L11 20 L13 12 L16 24 L19 16 L21 20 L26 20"
+          stroke="#34d399" stroke-width="2.5" fill="none"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <a class="brand" href="./index.html">OptimizeMe</a>
+  <nav>
+    <a href="./privacy.html">Privacy</a>
+    <a href="./terms.html">Terms</a>
+  </nav>
+</header>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated 7 September 2026</p>
+
+<p class="lede">
+  OptimizeMe reads your health data to show it back to you and to generate
+  wellness suggestions. It is not used for advertising, it is not sold, and it
+  is not shared with third parties for their own purposes.
+</p>
+
+<h2>What we handle</h2>
+<table>
+  <tr><th>Source</th><th>Data</th></tr>
+  <tr>
+    <td>Apple Health</td>
+    <td>Only the categories you approve. OptimizeMe requests read access only
+        and never requests permission to write to your Health record.</td>
+  </tr>
+  <tr>
+    <td>Google Health</td>
+    <td>Sleep and sleep stages, heart rate, heart-rate variability,
+        respiratory rate, blood oxygen, activity, workouts, body weight and
+        body composition.</td>
+  </tr>
+  <tr>
+    <td>Strava</td>
+    <td>Your activities: type, time, distance, pace, elevation, power and
+        heart rate.</td>
+  </tr>
+  <tr>
+    <td>Oura, WHOOP</td>
+    <td>Sleep, recovery, workouts and body measurements, if you connect them.</td>
+  </tr>
+  <tr>
+    <td>You</td>
+    <td>Notes, supplements, water, meal timing, stress ratings and activity tags.</td>
+  </tr>
+</table>
+
+<h2>Where it lives</h2>
+<table>
+  <tr><th>Data</th><th>Stored</th><th>Leaves your device?</th></tr>
+  <tr>
+    <td>Apple Health data</td><td>On your device</td>
+    <td>Only within a request you trigger, to compute your analysis</td>
+  </tr>
+  <tr>
+    <td>Your notes and manual log</td><td>On your device</td>
+    <td>Sent with an analysis request, not retained afterwards</td>
+  </tr>
+  <tr>
+    <td>Connections to Google, Strava, Oura, WHOOP</td>
+    <td>Encrypted with AES-256-GCM</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Analysis results</td><td>Held in memory for display</td><td>No</td>
+  </tr>
+</table>
+
+<p>
+  <strong>Apple Health data is never written to iCloud</strong>, in line with
+  Apple's requirement that HealthKit data may not be stored there.
+</p>
+
+<p>
+  <strong>Analysis requests are not persisted.</strong> When the app asks the
+  server to analyse a day, the request carries that day's measurements and your
+  manual log. The server computes a response and discards the input. There is
+  no request-body logging and no analytics performed on health data.
+</p>
+
+<p>
+  <strong>Access tokens for connected services are encrypted at rest</strong>,
+  with your account and the specific service bound into the encryption so a
+  stored credential cannot be reused for a different account or service.
+</p>
+
+<h2>What OptimizeMe never does</h2>
+<ul>
+  <li>Use health data for advertising or marketing</li>
+  <li>Sell health data or share it with data brokers</li>
+  <li>Build advertising profiles from health data</li>
+  <li>Share health data with third parties for their own purposes</li>
+  <li>Require an account for features that do not need one</li>
+</ul>
+
+<h2>Your control</h2>
+<ul>
+  <li>Revoke Apple Health access at any time in iOS Settings &rsaquo; Privacy
+      &amp; Security &rsaquo; Health, or in the Health app.</li>
+  <li>Disconnect any service at any time, which deletes its stored credentials.</li>
+  <li>Delete your account, which erases your stored data and all connected
+      service credentials.</li>
+  <li>Delete the app to remove everything held on the device.</li>
+</ul>
+
+<h2>Not medical care</h2>
+<p>
+  OptimizeMe provides general wellness information with citations to published
+  research. It does not diagnose, treat, cure or prevent any disease, and it is
+  not a substitute for professional medical care.
+</p>
+
+<h2>Changes</h2>
+<p>
+  If this policy changes materially, the updated date above will change and the
+  app will note it. Continued use after a change indicates acceptance.
+</p>
+
+<footer>
+  <p>Questions: <a href="mailto:maxrothman2000@gmail.com">maxrothman2000@gmail.com</a></p>
+</footer>
+</div>
+</body>
+</html>

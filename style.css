@@ -1,0 +1,114 @@
+/* Shared styling for the public pages. Mirrors the app's cream/taupe
+   language so the site and product read as one thing. */
+:root {
+  --bg: #f6f2e9;
+  --surface: #eae4d4;
+  --border: #dcd3bf;
+  --ink: #201b12;
+  --body: #4e4437;
+  --muted: #7a6d5b;
+  --accent: #047857;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0c0c0e;
+    --surface: #18181b;
+    --border: #27272a;
+    --ink: #fafafa;
+    --body: #d4d4d8;
+    --muted: #71717a;
+    --accent: #34d399;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--body);
+  font-family: "Outfit", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 46rem; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+
+header.site {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  padding-bottom: 2.5rem;
+}
+
+.mark { width: 26px; height: 26px; }
+
+.brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -.01em;
+  text-decoration: none;
+}
+
+nav { margin-left: auto; display: flex; gap: 1.25rem; }
+nav a { color: var(--muted); text-decoration: none; font-size: .9rem; }
+nav a:hover { color: var(--accent); }
+
+h1 {
+  color: var(--ink);
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+  margin: 0 0 .5rem;
+}
+
+h2 {
+  color: var(--ink);
+  font-size: 1.15rem;
+  margin: 2.5rem 0 .75rem;
+  letter-spacing: -.01em;
+}
+
+.lede { font-size: 1.05rem; color: var(--body); margin-bottom: 2rem; }
+.updated { color: var(--muted); font-size: .85rem; margin-bottom: 2.5rem; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: .92rem;
+}
+th, td {
+  text-align: left;
+  padding: .6rem .75rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+th { color: var(--ink); font-weight: 600; }
+
+ul { padding-left: 1.15rem; }
+li { margin: .35rem 0; }
+
+.callout {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+  margin: 1.75rem 0;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  color: var(--muted);
+  font-size: .85rem;
+}
+
+a { color: var(--accent); }
+code {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: .88em;
+}
