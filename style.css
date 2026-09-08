@@ -113,11 +113,5 @@ code {
   font-size: .88em;
 }
 
-/* Brand mark. The artwork is a dark taupe line drawing; a lighter tint is
-   swapped in when the visitor's OS is in dark mode. */
-.mark-dark { display: none; }
-
-@media (prefers-color-scheme: dark) {
-  .mark-light { display: none; }
-  .mark-dark { display: block; }
-}
+/* Brand mark. Theme selection happens in the markup via <picture>, so a
+   stale stylesheet cannot leave both variants visible. */
